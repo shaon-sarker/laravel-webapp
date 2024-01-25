@@ -1,4 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -63,4 +63,75 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT). -->
+
+
+
+
+
+## Laravel Web-Application
+
+A simple Web Application and how to install it
+
+[![](https://img.shields.io/badge/Laravel-v10.26.2-ff2e21.svg)](https://laravel.com)
+[![](https://img.shields.io/badge/bootstrap-v5.3-712cf9.svg)](https://getbootstrap.com)
+
+- [Laravel 10.x](https://github.com/laravel/laravel)
+- [Bootstrap](https://getbootstrap.com/)
+
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## List of Task
+
+- ✅ Eloquent Models:
+- ✅ Controller Actions
+- ✅ Middleware
+- ✅ Queues
+- ✅ Events and Listeners
+- ✅ Import and Export
+
+
+## How To Use
+#### Clone the repository
+
+```bash
+git clone https://github.com/shaon-sarker/laravel-webapp.git
+```
+
+#### Copy .env.example file to .env and edit credentials also set app url
+```bash
+cp .env.example .env
+```
+
+#### Install Via Composer
+
+```bash
+composer install
+```
+
+#### Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+#### Migrate Database
+
+```bash
+php artisan migrate
+```
+
+#### Run Seeder
+
+```bash
+php artisan db:seed
+```
+
+#### Run this application
+
+```bash
+php artisan serve
+```
+
+
