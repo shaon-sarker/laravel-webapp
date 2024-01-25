@@ -19,7 +19,7 @@ class SendNewProductEmail implements ShouldQueue
      * Create a new job instance.
      */
     protected $product;
-    public function __construct(Product $product)
+    public function __construct($product)
     {
         $this->product = $product;
     }
@@ -29,10 +29,31 @@ class SendNewProductEmail implements ShouldQueue
      */
     public function handle(): void
     {
-        // Access the product details
-        $product = $this->product;
 
-        // Send email to the user
-        Mail::to($product->user->email)->send(new NewProductNotification($product));
+        // Check if $this->product is an object
+        if (!is_object($this->product)) {
+            return;
+        }
+
+        // Check if $this->product has the 'user' relationship
+        if (!method_exists($this->product, 'user')) {
+            return;
+        }
+
+        // Access the product details
+        $user = $this->product->user; // Assuming a product belongs to a user
+
+        // Check if $user is an object
+        if (!is_object($user)) {
+            return;
+        }
+
+        // Check if $user has the 'email' property
+        if (!property_exists($user, 'email')) {
+            return;
+        }
+        $email = $user->email;
+
+        Mail::to($email)->send(new NewProductNotification($this->product));
     }
 }

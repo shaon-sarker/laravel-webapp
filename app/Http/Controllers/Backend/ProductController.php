@@ -40,13 +40,13 @@ class ProductController extends Controller
     public function store(ProductStoreRequest $request)
     {
         // dd($request->all());
-        Product::insert([
+       $product = Product::insert([
             // 'category_id'=>$request->category_id,
             'name'=>$request->name,
             'price'=>$request->price,
             'quantity'=>$request->quantity,
         ]);
-        // SendNewProductEmail::dispatch($product);
+        SendNewProductEmail::dispatch($product);
         return redirect()->route('product.index');
     }
 

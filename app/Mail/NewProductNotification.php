@@ -18,7 +18,7 @@ class NewProductNotification extends Mailable
      * Create a new message instance.
      */
     public $product;
-    public function __construct(Product $product)
+    public function __construct($product)
     {
         $this->product = $product;
     }
