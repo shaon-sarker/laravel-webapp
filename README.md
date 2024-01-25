@@ -103,6 +103,15 @@ git clone https://github.com/shaon-sarker/laravel-webapp.git
 ```bash
 cp .env.example .env
 ```
+#### Configure env file for Database
+```bash
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=web_application
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
 #### Install Via Composer
 
@@ -133,5 +142,8 @@ php artisan db:seed
 ```bash
 php artisan serve
 ```
+
+
+
 
 
