@@ -16,6 +16,7 @@
 <section class="content">
     <div class="container-fluid">
       <a href="{{ route('product_export') }}" class="btn btn-info">Export</a>
+      <a href="{{ route('product.create') }}" class="btn btn-dark">Create</a>
       <div class="row">
         <div class="col-12">
           <div class="card">
@@ -50,7 +51,7 @@
                       </tr>
                       @empty
                       <tr>
-                        <td colspan="3">There are no products.</td>
+                        <td colspan="5" class="text-center">There are no products.</td>
                     </tr>
                     @endforelse
                 </tbody>

@@ -4,7 +4,6 @@ namespace App\Exports;
 
 use App\Models\Product;
 use Maatwebsite\Excel\Concerns\FromCollection;
-// use Maatwebsite\Excel\Concerns\WithHeadings;
 
 class ProductExport implements FromCollection
 {
@@ -15,12 +14,4 @@ class ProductExport implements FromCollection
     {
         return Product::select('name','price','quantity')->get();
     }
-    // public function headings(): array
-    // {
-    //     return [
-    //         'Name',
-    //         'Price',
-    //         'Quantity',
-    //     ];
-    // }
 }

@@ -14,15 +14,5 @@ class Product extends Model
     public function category()
     {
         return $this->belongsTo(Category::class);
-    }
-
-  
+    } 
 }
-
-// $product = [
-//     'category_id' => 1,
-//     'name' => 'value1',
-//     'price' => 'value2',
-//     'quantity' => 'value3',
-// ];
-// Product::create($product);

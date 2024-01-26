@@ -34,7 +34,7 @@
           </li>
 
           <li class="nav-item menu-open">
-            <a href="{{ route('product.create') }}" class="nav-link">
+            <a href="{{ route('product.index') }}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Product

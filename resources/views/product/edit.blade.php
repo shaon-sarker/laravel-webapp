@@ -28,23 +28,6 @@
                 @method('PUT')
               <div class="card-body">
                 <div class="row">
-                    {{-- <div class="col-3">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Category name</label>
-                            <select name="category_id" class="form-control">
-                                <option value="">Select Category</option>
-                                @foreach ($category_info as $data)
-                                    <option value="{{ $data->id }}" @if ($product_info->category_id == $data->id)
-                                        selected @endif>{{ $data->catgeory_name }}</option>
-                                @endforeach
-                            </select>
-                        </div>
-                        @error('category_id')
-                        <div class="alert alert-danger">
-                            {{ $message }}
-                        </div>
-                        @enderror
-                    </div> --}}
                     <div class="col-4">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Product Name</label>

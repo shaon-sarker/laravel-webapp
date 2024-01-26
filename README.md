@@ -72,6 +72,13 @@ php artisan db:seed
 php artisan serve
 ```
 
+#### Login application
+
+```bash
+email: shaon@gmail.com
+pass: 1234
+```
+
 
 
 
